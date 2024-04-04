@@ -1,1 +1,87 @@
 /* Place CSS styles here */
+.header {
+    background-color: #c3d3e5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+.topnav {
+    overflow: hidden;
+    background-color:black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #e6e5e5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } 
+
+.topnav a:hover {
+    background-color: #cdcdcd;
+    color: black;
+}
+    
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb("f4f4f4");
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    padding-left: 20px; 
+}
+
+h2 {
+    color: rgb(219, 17, 17);
+    font-family: "Montserrat", sans-serif;
+}
+.row {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.leftcolumn {   
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; 
+  }
+
+.leftcolumn h2 { 
+    margin-bottom: 5px;
+}
+
+.rightcolumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 20px; 
+    padding-right: 20px; 
+  }
+
+.card {
+    background-color: #c3d3e5;
+    padding-left: 20px;
+}
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+}
+}
+
+@media screen and (max-width: 400px) {
+.topnav a {
+    float: none;
+    width: 100%;
+}
+}
+
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
